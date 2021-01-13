@@ -27,6 +27,7 @@ simulated_sequence <- simSeq(simulated_tree, l = 13000) # To simulate sequences 
    * These scripts run each treatment of the Washington SARS-CoV-2 outbreak dataset. The </data> object, containing sequences, has been removed due to ethical       constraints. Including an alignment here with samples as the paper and named according to GISAID-ACCESSION-NUMBER_DECIMAL-DATE will allow these scripts to run.
    * Our method of converting sequences to occurrences before a given timepoint was to replace the sequence with a string of 'n'.
 ```R
+library(ape)
 # aln = an alignment in matrix form
 # samples_before_timepoint = a vector of sequences taken before a timepoint
 occ <- which(rownames(aln) %in% sequences_before_timepoint)
