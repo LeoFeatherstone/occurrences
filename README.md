@@ -20,7 +20,9 @@ simulated_sequence <- simSeq(simulated_tree, l = 13000) # To simulate sequences 
     
   ### occurrences/simulations/convert_bd_bdsky.R
    * This *ad hoc* R code converts constant birth-death xml above into xml for birth-death skyline analyses.
-    
+   
+  ### occurrences/simulations/CoalExp_template.xml
+   * Simulated alignments from the process above can be pasted into this template to conduct analyses using a coalescent exponential tree prior.
     
 ### Washington SARS-CoV-2 Analysis Scripts
   #### occurrences/washington_SARS-CoV-2/\*.xml
