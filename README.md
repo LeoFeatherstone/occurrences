@@ -1,5 +1,5 @@
 # Occurrences
-### Simulation scripts and empirical analyses using occurrence data in https://www.biorxiv.org/content/10.1101/596700v2. The following should allow one to \n reproduce our analyses.
+## Simulation scripts and empirical analyses using occurrence data in https://www.biorxiv.org/content/10.1101/596700v2. The following should allow one to reproduce our analyses.
 ### All scripts are run using BEAST2 (http://www.beast2.org/). \n Simulations were conducted in BEAST v2.5.1 and analyses of Washtington SARS-CoV-2 in BEAST v2.6.0.
 
 ### Simulation scripts
@@ -15,5 +15,5 @@
     
 ### Washtington SARS-CoV-2 Analysis Scripts
   #### occurrences/washington_SARS-CoV-2/\*.xml
-    These scripts run each treatment of the Washington SARS-CoV-2 outbreak dataset. The </data> object, containing sequences, has been removed due to \n ethical           constraints. Including an alignment here with samples as per the subsetting in the paper and according to GISAID-ACCESSION-NUMBER_DECIMAL-DATE will allow these     scripts to run.
+    These scripts run each treatment of the Washington SARS-CoV-2 outbreak dataset. The </data> object, containing sequences, has been removed due to ethical           constraints. Including an alignment here with samples as per the subsetting in the paper and according to GISAID-ACCESSION-NUMBER_DECIMAL-DATE will allow these     scripts to run.
     
