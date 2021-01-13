@@ -4,7 +4,7 @@
 
 ### Simulation scripts
   #### occurrences/simulations/BD_skyline_sims.xml
-    The xml template for simulating outbreaks using MASTER (https://github.com/tgvaughan/MASTER). \nSimply specify birth, death, and sampling rates as well as             simulation time.
+    The xml template for simulating outbreaks using MASTER (https://github.com/tgvaughan/MASTER). Simply specify birth, death, and sampling rates as well as             simulation time.
     
     Output .tree files can then be read into R where the simSeq package is used to simulate sequence (https://cran.r-project.org/web/packages/phangorn/phangorn.pdf)
     
