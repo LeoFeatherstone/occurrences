@@ -3,7 +3,7 @@
 ## Simulation scripts and empirical analyses using occurrence data in https://www.biorxiv.org/content/10.1101/596700v2. The following should allow one to reproduce our analyses.
 ### All scripts are run using BEAST2 (http://www.beast2.org/). Simulations were conducted in BEAST v2.5.1 and analyses of Washtington SARS-CoV-2 in BEAST v2.6.0.
 
-### Simulation scripts
+### **Simulation scripts:**
   #### occurrences/simulations/BD_skyline_sims.xml
    * The xml template for simulating outbreaks using MASTER (https://github.com/tgvaughan/MASTER). Simply specify birth, death, and sampling rates as well as    simulation time.
     
