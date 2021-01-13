@@ -1,6 +1,7 @@
 # Occurrences
+
 ## Simulation scripts and empirical analyses using occurrence data in https://www.biorxiv.org/content/10.1101/596700v2. The following should allow one to reproduce our analyses.
-### All scripts are run using BEAST2 (http://www.beast2.org/). \n Simulations were conducted in BEAST v2.5.1 and analyses of Washtington SARS-CoV-2 in BEAST v2.6.0.
+### All scripts are run using BEAST2 (http://www.beast2.org/). Simulations were conducted in BEAST v2.5.1 and analyses of Washtington SARS-CoV-2 in BEAST v2.6.0.
 
 ### Simulation scripts
   #### occurrences/simulations/BD_skyline_sims.xml
@@ -11,6 +12,8 @@
   #### occurrences/simulations/BDSky_template.xml
     Simulated alignments from the process above can be pasted into this template to conduct analyses using a constant rate Birth-Death tree prior.
     
+  ### occurrences/simulations/convert_bd_bdsky.R
+    This *ad hoc* R code converts constant birth-death xml above into xml for birth-death skyline analyses.
     
     
 ### Washtington SARS-CoV-2 Analysis Scripts
