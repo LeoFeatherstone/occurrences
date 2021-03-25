@@ -38,5 +38,5 @@
         <!--output spec='NewickOutput' fileName="BDTree_hetero_fixedN_MASTER.newick.tree"/-->
 	<output spec="NexusOutput" fileName="BDTree_MASTER_constant_samp.nexus.tree"/>
 	<output spec='JsonOutput' fileName="BDTree_MASTER_constant_samp.json"/>
-    </run>
+    </run> 
 </beast>
