@@ -28,6 +28,7 @@ simulated_sequence <- simSeq(simulated_tree, l = 13000) # To simulate sequences 
   #### occurrences/washington_SARS-CoV-2/\*.xml
    * These scripts run each treatment of the Washington SARS-CoV-2 outbreak dataset. The </data> object, containing sequences, has been removed due to ethical       constraints. Including an alignment here with samples as the paper and named according to GISAID-ACCESSION-NUMBER_DECIMAL-DATE will allow these scripts to run.
    * Our method of converting sequences to occurrences before a given timepoint was to replace the sequence with a string of 'n'.
+   * There is also an 'EXAMPLE' file copied from one of our BDSky analyses. It is intended to help those wishing to reproduce our work with integrating sequence data into the other .xml templates.
 ```R
 library(ape)
 # aln = an alignment in matrix form
