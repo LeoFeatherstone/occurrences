@@ -151,6 +151,6 @@
         <log id="TreeWithMetaDataLogger.t:BDskyline" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:BDskyline"/>
     </logger--> 
 
-</run>
+</run> 
 
 </beast>
