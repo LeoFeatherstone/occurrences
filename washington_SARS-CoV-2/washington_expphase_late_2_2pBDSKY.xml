@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+        
+
+
+    
+
+
+    
+
+    <map name="Uniform" >beast.math.distributions.Uniform</map>
+    
+    <map name="Exponential" >beast.math.distributions.Exponential</map>
+    
+    <map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+    
+    <map name="Normal" >beast.math.distributions.Normal</map>
+    
+    <map name="Beta" >beast.math.distributions.Beta</map>
+    
+    <map name="Gamma" >beast.math.distributions.Gamma</map>
+    
+    <map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+    
+    <map name="prior" >beast.math.distributions.Prior</map>
+    
+    <map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+    
+    <map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+    <function spec="beast.core.util.Slice" id="one" arg="@samplingProportionPrior.t:washington_expphase_late_2" index="0" count="1"/>
+	<function spec="beast.core.util.Slice" id="two" arg="@samplingProportionPrior.t:washington_expphase_late_2" index="1" count="1"/>
+    
+    <run id="mcmc" spec="MCMC" chainLength="500000000">
+            
+        <state id="state" spec="State" storeEvery="5000">
+                    
+            <tree id="Tree.t:washington_expphase_late_2" spec="beast.evolution.tree.Tree" name="stateNode">
+                            
+                <trait id="dateTrait.t:washington_expphase_late_2" spec="beast.evolution.tree.TraitSet" traitname="date" value="EPI_ISL_416683_2020.20218579235=2020.20218579235,EPI_ISL_416685_2020.20218579235=2020.20218579235,EPI_ISL_418029_2020.20491803279=2020.20491803279,EPI_ISL_418030_2020.20491803279=2020.20491803279,EPI_ISL_418031_2020.20491803279=2020.20491803279,EPI_ISL_418032_2020.20491803279=2020.20491803279,EPI_ISL_418033_2020.20491803279=2020.20491803279,EPI_ISL_418034_2020.20491803279=2020.20491803279,EPI_ISL_418037_2020.20491803279=2020.20491803279,EPI_ISL_418038_2020.20218579235=2020.20218579235,EPI_ISL_418040_2020.20491803279=2020.20491803279,EPI_ISL_418046_2020.20491803279=2020.20491803279,EPI_ISL_418047_2020.20491803279=2020.20491803279,EPI_ISL_418050_2020.20491803279=2020.20491803279,EPI_ISL_418052_2020.20491803279=2020.20491803279,EPI_ISL_418053_2020.20491803279=2020.20491803279,EPI_ISL_418054_2020.20491803279=2020.20491803279,EPI_ISL_418869_2020.20491803279=2020.20491803279,EPI_ISL_418870_2020.20491803279=2020.20491803279,EPI_ISL_418872_2020.20491803279=2020.20491803279,EPI_ISL_418873_2020.20491803279=2020.20491803279,EPI_ISL_418875_2020.20491803279=2020.20491803279,EPI_ISL_418876_2020.20491803279=2020.20491803279,EPI_ISL_418890_2020.20491803279=2020.20491803279,EPI_ISL_418892_2020.20491803279=2020.20491803279,EPI_ISL_418897_2020.20491803279=2020.20491803279,EPI_ISL_418899_2020.20491803279=2020.20491803279,EPI_ISL_422963_2020.20491803279=2020.20491803279,EPI_ISL_422964_2020.20491803279=2020.20491803279,EPI_ISL_422965_2020.20491803279=2020.20491803279,EPI_ISL_422966_2020.20491803279=2020.20491803279,EPI_ISL_422967_2020.20491803279=2020.20491803279,EPI_ISL_422969_2020.20765027322=2020.20765027322,EPI_ISL_422970_2020.20765027322=2020.20765027322,EPI_ISL_422971_2020.20765027322=2020.20765027322,EPI_ISL_422972_2020.20765027322=2020.20765027322,EPI_ISL_422973_2020.20765027322=2020.20765027322,EPI_ISL_422974_2020.20765027322=2020.20765027322,EPI_ISL_422975_2020.21038251366=2020.21038251366,EPI_ISL_422976_2020.20765027322=2020.20765027322,EPI_ISL_422977_2020.20765027322=2020.20765027322,EPI_ISL_422981_2020.20765027322=2020.20765027322,EPI_ISL_422984_2020.20765027322=2020.20765027322,EPI_ISL_422986_2020.21038251366=2020.21038251366,EPI_ISL_422987_2020.21038251366=2020.21038251366,EPI_ISL_422988_2020.21038251366=2020.21038251366,EPI_ISL_422989_2020.21038251366=2020.21038251366,EPI_ISL_422990_2020.21038251366=2020.21038251366,EPI_ISL_422991_2020.20765027322=2020.20765027322,EPI_ISL_422992_2020.20765027322=2020.20765027322,EPI_ISL_422993_2020.21038251366=2020.21038251366,EPI_ISL_422994_2020.21038251366=2020.21038251366,EPI_ISL_422995_2020.20765027322=2020.20765027322,EPI_ISL_422996_2020.20765027322=2020.20765027322,EPI_ISL_422997_2020.20765027322=2020.20765027322,EPI_ISL_422999_2020.21038251366=2020.21038251366,EPI_ISL_430116_2020.20491803279=2020.20491803279,EPI_ISL_430132_2020.20765027322=2020.20765027322,EPI_ISL_430137_2020.21857923497=2020.21857923497,EPI_ISL_430140_2020.20218579235=2020.20218579235,EPI_ISL_477685_2020.20765027322=2020.20765027322,EPI_ISL_477686_2020.21038251366=2020.21038251366,EPI_ISL_477687_2020.21038251366=2020.21038251366,EPI_ISL_477688_2020.2131147541=2020.2131147541,EPI_ISL_477689_2020.2131147541=2020.2131147541,EPI_ISL_477690_2020.21038251366=2020.21038251366,EPI_ISL_477691_2020.21584699454=2020.21584699454,EPI_ISL_477692_2020.21584699454=2020.21584699454,EPI_ISL_477693_2020.21584699454=2020.21584699454,EPI_ISL_477694_2020.2131147541=2020.2131147541,EPI_ISL_418884_2020.20218579235=2020.20218579235,EPI_ISL_418886_2020.20218579235=2020.20218579235,EPI_ISL_418888_2020.20218579235=2020.20218579235,EPI_ISL_418889_2020.20491803279=2020.20491803279,EPI_ISL_424218_2020.21584699454=2020.21584699454,EPI_ISL_424219_2020.21584699454=2020.21584699454,EPI_ISL_424220_2020.21857923497=2020.21857923497,EPI_ISL_424221_2020.21857923497=2020.21857923497,EPI_ISL_424222_2020.21584699454=2020.21584699454,EPI_ISL_424223_2020.21857923497=2020.21857923497,EPI_ISL_424224_2020.21857923497=2020.21857923497,EPI_ISL_424225_2020.21857923497=2020.21857923497,EPI_ISL_424226_2020.21857923497=2020.21857923497,EPI_ISL_424227_2020.21857923497=2020.21857923497,EPI_ISL_424228_2020.21857923497=2020.21857923497,EPI_ISL_424229_2020.21857923497=2020.21857923497,EPI_ISL_424230_2020.21857923497=2020.21857923497,EPI_ISL_424231_2020.21857923497=2020.21857923497,EPI_ISL_424232_2020.21857923497=2020.21857923497,EPI_ISL_424233_2020.21857923497=2020.21857923497,EPI_ISL_424234_2020.21857923497=2020.21857923497,EPI_ISL_424235_2020.21857923497=2020.21857923497,EPI_ISL_424236_2020.21857923497=2020.21857923497,EPI_ISL_424237_2020.21857923497=2020.21857923497,EPI_ISL_424238_2020.21857923497=2020.21857923497,EPI_ISL_424239_2020.21857923497=2020.21857923497,EPI_ISL_424240_2020.21857923497=2020.21857923497,EPI_ISL_424241_2020.21857923497=2020.21857923497,EPI_ISL_424242_2020.21857923497=2020.21857923497,EPI_ISL_424243_2020.21857923497=2020.21857923497,EPI_ISL_424245_2020.21857923497=2020.21857923497,EPI_ISL_424246_2020.21857923497=2020.21857923497,EPI_ISL_424247_2020.21857923497=2020.21857923497,EPI_ISL_424250_2020.2131147541=2020.2131147541,EPI_ISL_424253_2020.21857923497=2020.21857923497,EPI_ISL_424254_2020.21857923497=2020.21857923497,EPI_ISL_424261_2020.21857923497=2020.21857923497,EPI_ISL_426436_2020.2131147541=2020.2131147541,EPI_ISL_426437_2020.2131147541=2020.2131147541,EPI_ISL_426438_2020.2131147541=2020.2131147541,EPI_ISL_426439_2020.2131147541=2020.2131147541,EPI_ISL_424200_2020.21584699454=2020.21584699454,EPI_ISL_424202_2020.21584699454=2020.21584699454,EPI_ISL_424203_2020.21584699454=2020.21584699454,EPI_ISL_424204_2020.21584699454=2020.21584699454,EPI_ISL_424205_2020.21584699454=2020.21584699454,EPI_ISL_424207_2020.21584699454=2020.21584699454,EPI_ISL_424208_2020.21584699454=2020.21584699454,EPI_ISL_424209_2020.21584699454=2020.21584699454,EPI_ISL_424210_2020.21584699454=2020.21584699454,EPI_ISL_424211_2020.2131147541=2020.2131147541,EPI_ISL_424212_2020.2131147541=2020.2131147541,EPI_ISL_424213_2020.21584699454=2020.21584699454,EPI_ISL_424214_2020.21584699454=2020.21584699454,EPI_ISL_424215_2020.21584699454=2020.21584699454,EPI_ISL_424216_2020.2131147541=2020.2131147541,EPI_ISL_426440_2020.2131147541=2020.2131147541,EPI_ISL_426441_2020.2131147541=2020.2131147541,EPI_ISL_426442_2020.2131147541=2020.2131147541,EPI_ISL_426443_2020.2131147541=2020.2131147541,EPI_ISL_426444_2020.2131147541=2020.2131147541,EPI_ISL_426445_2020.2131147541=2020.2131147541,EPI_ISL_426446_2020.2131147541=2020.2131147541,EPI_ISL_426447_2020.2131147541=2020.2131147541,EPI_ISL_426448_2020.21584699454=2020.21584699454,EPI_ISL_426449_2020.2131147541=2020.2131147541,EPI_ISL_426450_2020.2131147541=2020.2131147541,EPI_ISL_426451_2020.2131147541=2020.2131147541,EPI_ISL_426452_2020.2131147541=2020.2131147541,EPI_ISL_426453_2020.21584699454=2020.21584699454,EPI_ISL_430212_2020.2131147541=2020.2131147541,EPI_ISL_430213_2020.2131147541=2020.2131147541,EPI_ISL_430214_2020.2131147541=2020.2131147541,EPI_ISL_430215_2020.2131147541=2020.2131147541,EPI_ISL_430216_2020.21584699454=2020.21584699454,EPI_ISL_430217_2020.21584699454=2020.21584699454,EPI_ISL_430219_2020.2131147541=2020.2131147541,EPI_ISL_430220_2020.21584699454=2020.21584699454,EPI_ISL_430221_2020.2131147541=2020.2131147541,EPI_ISL_430222_2020.2131147541=2020.2131147541,EPI_ISL_430223_2020.2131147541=2020.2131147541,EPI_ISL_430224_2020.21584699454=2020.21584699454,EPI_ISL_430225_2020.21584699454=2020.21584699454,EPI_ISL_430226_2020.21584699454=2020.21584699454,EPI_ISL_430227_2020.21584699454=2020.21584699454,EPI_ISL_430229_2020.21584699454=2020.21584699454,EPI_ISL_430230_2020.21584699454=2020.21584699454,EPI_ISL_430231_2020.2131147541=2020.2131147541,EPI_ISL_430232_2020.21584699454=2020.21584699454,EPI_ISL_430233_2020.21584699454=2020.21584699454,EPI_ISL_430234_2020.2131147541=2020.2131147541,EPI_ISL_430235_2020.21584699454=2020.21584699454,EPI_ISL_430236_2020.21584699454=2020.21584699454,EPI_ISL_430237_2020.21584699454=2020.21584699454,EPI_ISL_430238_2020.21584699454=2020.21584699454,EPI_ISL_430239_2020.21584699454=2020.21584699454,EPI_ISL_430240_2020.21584699454=2020.21584699454,EPI_ISL_430241_2020.21584699454=2020.21584699454,EPI_ISL_430243_2020.21584699454=2020.21584699454,EPI_ISL_430244_2020.21584699454=2020.21584699454,EPI_ISL_430245_2020.21584699454=2020.21584699454,EPI_ISL_430248_2020.2131147541=2020.2131147541,EPI_ISL_430249_2020.21584699454=2020.21584699454,EPI_ISL_430250_2020.2131147541=2020.2131147541,EPI_ISL_430252_2020.21584699454=2020.21584699454,EPI_ISL_430253_2020.21584699454=2020.21584699454,EPI_ISL_430254_2020.21584699454=2020.21584699454,EPI_ISL_430255_2020.21584699454=2020.21584699454,EPI_ISL_430257_2020.21584699454=2020.21584699454,EPI_ISL_430258_2020.21584699454=2020.21584699454,EPI_ISL_430259_2020.2131147541=2020.2131147541,EPI_ISL_430261_2020.21584699454=2020.21584699454,EPI_ISL_430262_2020.2131147541=2020.2131147541,EPI_ISL_430263_2020.21584699454=2020.21584699454,EPI_ISL_430264_2020.21857923497=2020.21857923497,EPI_ISL_430265_2020.21584699454=2020.21584699454,EPI_ISL_430266_2020.21584699454=2020.21584699454,EPI_ISL_430267_2020.2131147541=2020.2131147541,EPI_ISL_430268_2020.2131147541=2020.2131147541,EPI_ISL_430269_2020.21584699454=2020.21584699454,EPI_ISL_457753_2020.20491803279=2020.20491803279,EPI_ISL_416715_2020.20218579235=2020.20218579235,EPI_ISL_416717_2020.20218579235=2020.20218579235,EPI_ISL_418900_2020.20491803279=2020.20491803279,EPI_ISL_418903_2020.20491803279=2020.20491803279,EPI_ISL_418904_2020.20491803279=2020.20491803279,EPI_ISL_418905_2020.20491803279=2020.20491803279,EPI_ISL_418906_2020.20491803279=2020.20491803279,EPI_ISL_418907_2020.20491803279=2020.20491803279,EPI_ISL_418908_2020.20491803279=2020.20491803279,EPI_ISL_418909_2020.20491803279=2020.20491803279,EPI_ISL_418910_2020.20491803279=2020.20491803279,EPI_ISL_418911_2020.20491803279=2020.20491803279,EPI_ISL_418912_2020.20491803279=2020.20491803279,EPI_ISL_418913_2020.20491803279=2020.20491803279,EPI_ISL_423010_2020.21038251366=2020.21038251366,EPI_ISL_423011_2020.2131147541=2020.2131147541,EPI_ISL_423012_2020.2131147541=2020.2131147541,EPI_ISL_423013_2020.2131147541=2020.2131147541,EPI_ISL_423014_2020.2131147541=2020.2131147541,EPI_ISL_423015_2020.2131147541=2020.2131147541,EPI_ISL_423016_2020.2131147541=2020.2131147541,EPI_ISL_423017_2020.2131147541=2020.2131147541,EPI_ISL_423018_2020.2131147541=2020.2131147541,EPI_ISL_423019_2020.2131147541=2020.2131147541,EPI_ISL_423020_2020.2131147541=2020.2131147541,EPI_ISL_423021_2020.2131147541=2020.2131147541,EPI_ISL_423022_2020.2131147541=2020.2131147541,EPI_ISL_423024_2020.20765027322=2020.20765027322,EPI_ISL_423025_2020.21038251366=2020.21038251366,EPI_ISL_423026_2020.21038251366=2020.21038251366,EPI_ISL_423027_2020.21038251366=2020.21038251366,EPI_ISL_423028_2020.21038251366=2020.21038251366,EPI_ISL_430204_2020.21038251366=2020.21038251366,EPI_ISL_430205_2020.21038251366=2020.21038251366,EPI_ISL_430206_2020.21038251366=2020.21038251366,EPI_ISL_430207_2020.21038251366=2020.21038251366,EPI_ISL_430208_2020.20765027322=2020.20765027322,EPI_ISL_430209_2020.2131147541=2020.2131147541,EPI_ISL_430210_2020.2131147541=2020.2131147541,EPI_ISL_430211_2020.2131147541=2020.2131147541,EPI_ISL_438154_2020.21584699454=2020.21584699454,EPI_ISL_477702_2020.21584699454=2020.21584699454,EPI_ISL_416711_2020.20218579235=2020.20218579235,EPI_ISL_416713_2020.20218579235=2020.20218579235,EPI_ISL_418064_2020.20218579235=2020.20218579235,EPI_ISL_418067_2020.20218579235=2020.20218579235,EPI_ISL_418071_2020.20218579235=2020.20218579235,EPI_ISL_418072_2020.20218579235=2020.20218579235,EPI_ISL_418073_2020.20218579235=2020.20218579235,EPI_ISL_418074_2020.20218579235=2020.20218579235,EPI_ISL_418075_2020.20218579235=2020.20218579235,EPI_ISL_418076_2020.20218579235=2020.20218579235,EPI_ISL_418077_2020.20218579235=2020.20218579235,EPI_ISL_418078_2020.20218579235=2020.20218579235,EPI_ISL_418079_2020.20218579235=2020.20218579235,EPI_ISL_418080_2020.20218579235=2020.20218579235,EPI_ISL_418081_2020.20218579235=2020.20218579235,EPI_ISL_418082_2020.20218579235=2020.20218579235,EPI_ISL_418922_2020.20491803279=2020.20491803279,EPI_ISL_418923_2020.20491803279=2020.20491803279,EPI_ISL_418927_2020.20491803279=2020.20491803279,EPI_ISL_418928_2020.20218579235=2020.20218579235,EPI_ISL_418929_2020.20765027322=2020.20765027322,EPI_ISL_418930_2020.20765027322=2020.20765027322,EPI_ISL_418931_2020.20765027322=2020.20765027322,EPI_ISL_418932_2020.20491803279=2020.20491803279,EPI_ISL_418933_2020.20765027322=2020.20765027322,EPI_ISL_418934_2020.20765027322=2020.20765027322,EPI_ISL_418935_2020.20491803279=2020.20491803279,EPI_ISL_418936_2020.20765027322=2020.20765027322,EPI_ISL_418937_2020.20765027322=2020.20765027322,EPI_ISL_418938_2020.20491803279=2020.20491803279,EPI_ISL_418939_2020.20765027322=2020.20765027322,EPI_ISL_418940_2020.20765027322=2020.20765027322,EPI_ISL_418942_2020.20765027322=2020.20765027322,EPI_ISL_418943_2020.20765027322=2020.20765027322,EPI_ISL_418944_2020.20218579235=2020.20218579235,EPI_ISL_418945_2020.20218579235=2020.20218579235,EPI_ISL_418948_2020.20491803279=2020.20491803279,EPI_ISL_418949_2020.20491803279=2020.20491803279,EPI_ISL_418950_2020.20491803279=2020.20491803279,EPI_ISL_418951_2020.20491803279=2020.20491803279,EPI_ISL_418952_2020.20491803279=2020.20491803279,EPI_ISL_418953_2020.20491803279=2020.20491803279,EPI_ISL_418954_2020.20765027322=2020.20765027322,EPI_ISL_418955_2020.20218579235=2020.20218579235,EPI_ISL_423000_2020.21038251366=2020.21038251366,EPI_ISL_423001_2020.2131147541=2020.2131147541,EPI_ISL_423002_2020.2131147541=2020.2131147541,EPI_ISL_423003_2020.2131147541=2020.2131147541,EPI_ISL_423004_2020.2131147541=2020.2131147541,EPI_ISL_423005_2020.2131147541=2020.2131147541,EPI_ISL_423006_2020.2131147541=2020.2131147541,EPI_ISL_423007_2020.2131147541=2020.2131147541,EPI_ISL_423008_2020.21038251366=2020.21038251366,EPI_ISL_423029_2020.21038251366=2020.21038251366,EPI_ISL_423030_2020.21038251366=2020.21038251366,EPI_ISL_423031_2020.21038251366=2020.21038251366,EPI_ISL_423032_2020.21038251366=2020.21038251366,EPI_ISL_423033_2020.21038251366=2020.21038251366,EPI_ISL_424300_2020.21857923497=2020.21857923497,EPI_ISL_430180_2020.20218579235=2020.20218579235,EPI_ISL_430181_2020.20218579235=2020.20218579235,EPI_ISL_430182_2020.20218579235=2020.20218579235,EPI_ISL_430188_2020.20491803279=2020.20491803279,EPI_ISL_430189_2020.20491803279=2020.20491803279,EPI_ISL_430190_2020.20491803279=2020.20491803279,EPI_ISL_430191_2020.20491803279=2020.20491803279,EPI_ISL_430193_2020.20491803279=2020.20491803279,EPI_ISL_430196_2020.20491803279=2020.20491803279,EPI_ISL_430197_2020.20491803279=2020.20491803279,EPI_ISL_430198_2020.20765027322=2020.20765027322,EPI_ISL_430199_2020.20765027322=2020.20765027322,EPI_ISL_417374_2020.20218579235=2020.20218579235,EPI_ISL_417375_2020.20218579235=2020.20218579235,EPI_ISL_417376_2020.20218579235=2020.20218579235,EPI_ISL_417377_2020.20218579235=2020.20218579235,EPI_ISL_417379_2020.20218579235=2020.20218579235,EPI_ISL_417382_2020.20218579235=2020.20218579235,EPI_ISL_424326_2020.21584699454=2020.21584699454,EPI_ISL_436040_2020.21584699454=2020.21584699454,EPI_ISL_457814_2020.21038251366=2020.21038251366,EPI_ISL_457823_2020.21857923497=2020.21857923497,EPI_ISL_424191_2020.21584699454=2020.21584699454,EPI_ISL_424192_2020.21584699454=2020.21584699454,EPI_ISL_424193_2020.21857923497=2020.21857923497,EPI_ISL_424194_2020.21584699454=2020.21584699454,EPI_ISL_424195_2020.21857923497=2020.21857923497,EPI_ISL_424196_2020.21584699454=2020.21584699454,EPI_ISL_424197_2020.21584699454=2020.21584699454,EPI_ISL_424198_2020.21584699454=2020.21584699454,EPI_ISL_476902_2020.20491803279=2020.20491803279,EPI_ISL_476905_2020.20765027322=2020.20765027322,EPI_ISL_424166_2020.2131147541=2020.2131147541,EPI_ISL_424167_2020.2131147541=2020.2131147541,EPI_ISL_424169_2020.2131147541=2020.2131147541,EPI_ISL_424170_2020.2131147541=2020.2131147541,EPI_ISL_424172_2020.2131147541=2020.2131147541,EPI_ISL_424175_2020.20765027322=2020.20765027322,EPI_ISL_424176_2020.20765027322=2020.20765027322,EPI_ISL_424178_2020.20765027322=2020.20765027322,EPI_ISL_424179_2020.20765027322=2020.20765027322,EPI_ISL_424180_2020.21038251366=2020.21038251366,EPI_ISL_424182_2020.21038251366=2020.21038251366,EPI_ISL_424183_2020.21038251366=2020.21038251366,EPI_ISL_424184_2020.21038251366=2020.21038251366,EPI_ISL_424186_2020.21584699454=2020.21584699454,EPI_ISL_424187_2020.21584699454=2020.21584699454,EPI_ISL_424188_2020.21584699454=2020.21584699454">
+                                    
+                    <taxa id="TaxonSet.washington_expphase_late_2" spec="TaxonSet">
+                                            
+                        <alignment idref="washington_expphase_late_2"/>
+                                        
+                    </taxa>
+                                
+                </trait>
+                            
+                <taxonset idref="TaxonSet.washington_expphase_late_2"/>
+                        
+            </tree>
+                    
+            <parameter id="clockRate.c:washington_expphase_late_2" spec="parameter.RealParameter" lower="0.001" name="stateNode" upper="0.001">0.001</parameter>
+                    
+            <parameter id="kappa.s:washington_expphase_late_2" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+                    
+            <parameter id="origin_BDSKY_Serial.t:washington_expphase_late_2" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1000.0</parameter>
+                    
+            <parameter id="reproductiveNumber_BDSKY_Serial.t:washington_expphase_late_2" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">2.0</parameter>
+                    <!-- changing two imtervals-->
+            <parameter id="samplingProportion_BDSKY_Serial.t:washington_expphase_late_2" spec="parameter.RealParameter" dimension="2" lower="0.0" name="stateNode" upper="1.0">0.01 0.01</parameter>
+                    
+            <parameter id="freqParameter.s:washington_expphase_late_2" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+                
+        </state>
+            
+        <init id="RandomTree.t:washington_expphase_late_2" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:washington_expphase_late_2" taxa="@washington_expphase_late_2">
+                    
+            <populationModel id="ConstantPopulation0.t:washington_expphase_late_2" spec="ConstantPopulation">
+                            
+                <parameter id="randomPopSize.t:washington_expphase_late_2" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+                        
+            </populationModel>
+                
+        </init>
+            
+        <distribution id="posterior" spec="util.CompoundDistribution">
+                    
+            <distribution id="prior" spec="util.CompoundDistribution">
+                            
+                <distribution id="BDSKY_Serial.t:washington_expphase_late_2" spec="beast.evolution.speciation.BirthDeathSkylineModel" origin="@origin_BDSKY_Serial.t:washington_expphase_late_2" reproductiveNumber="@reproductiveNumber_BDSKY_Serial.t:washington_expphase_late_2" samplingProportion="@samplingProportion_BDSKY_Serial.t:washington_expphase_late_2" tree="@Tree.t:washington_expphase_late_2">
+
+			    <!-- reverse times, where sampling change occurs at 0.075 since the start of the process
+				 becaues it is 0.1 time units long, we use the 0.025=0.1minus0.075 -->
+				<reverseTimeArrays spec="beast.core.parameter.BooleanParameter" value="false false true false false false"/>
+			    <!--samplingRateChangeTimes spec="beast.core.parameter.RealParameter" value="0.41 0"/-->
+			    <samplingRateChangeTimes spec="beast.core.parameter.RealParameter" value="0.017 0"/>    
+                                    
+                    <parameter id="becomeUninfectiousRate_BDSKY_Serial.t:washington_expphase_late_2" spec="parameter.RealParameter" estimate="false" lower="0.0" name="becomeUninfectiousRate" upper="Infinity">36.5</parameter>
+                                
+                </distribution>
+                            
+                <prior id="ClockPrior.c:washington_expphase_late_2" name="distribution" x="@clockRate.c:washington_expphase_late_2">
+                                    
+                    <Uniform id="Uniform.11" name="distr" upper="Infinity"/>
+                                
+                </prior>
+                            
+                <prior id="FrequenciesPrior.s:washington_expphase_late_2" name="distribution" x="@freqParameter.s:washington_expphase_late_2">
+                                    
+                    <Uniform id="Uniform.14" name="distr"/>
+                                
+                </prior>
+                            
+                <prior id="KappaPrior.s:washington_expphase_late_2" name="distribution" x="@kappa.s:washington_expphase_late_2">
+                                    
+                    <LogNormal id="LogNormalDistributionModel.8" name="distr">
+                                            
+                        <parameter id="RealParameter.33" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                                            
+                        <parameter id="RealParameter.34" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                                        
+                    </LogNormal>
+                                
+                </prior>
+                            
+                <prior id="originPrior_BDSKY_Serial.t:washington_expphase_late_2" name="distribution" x="@origin_BDSKY_Serial.t:washington_expphase_late_2">
+                                    
+                    <Uniform id="Uniform.15" name="distr" upper="Infinity"/>
+                                
+                </prior>
+                            
+                <prior id="reproductiveNumberPrior_BDSKY_Serial.t:washington_expphase_late_2" name="distribution" x="@reproductiveNumber_BDSKY_Serial.t:washington_expphase_late_2">
+                                    
+                    <LogNormal id="LogNormalDistributionModel.10" name="distr">
+                                            
+                        <parameter id="RealParameter.39" spec="parameter.RealParameter" estimate="false" name="M">0.0</parameter>
+                                            
+                        <parameter id="RealParameter.40" spec="parameter.RealParameter" estimate="false" name="S">1.0</parameter>
+                                        
+                    </LogNormal>
+                                
+                </prior>
+                            
+                <prior id="samplingProportionPrior_BDSKY_Serial.t:washington_expphase_late_2" name="distribution" x="@samplingProportion_BDSKY_Serial.t:washington_expphase_late_2">
+                                    
+                    <Beta id="Beta.9" name="distr">
+                                            
+                        <parameter id="RealParameter.43" spec="parameter.RealParameter" estimate="false" name="alpha">2.0</parameter>
+                                            
+                        <parameter id="RealParameter.44" spec="parameter.RealParameter" estimate="false" name="beta">2.0</parameter>
+                                        
+                    </Beta>
+                                
+                </prior>
+                        
+            </distribution>
+                    
+            <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+                            
+                <distribution id="treeLikelihood.washington_expphase_late_2" spec="ThreadedTreeLikelihood" data="@washington_expphase_late_2" tree="@Tree.t:washington_expphase_late_2">
+                                    
+                    <siteModel id="SiteModel.s:washington_expphase_late_2" spec="SiteModel">
+                                            
+                        <parameter id="mutationRate.s:washington_expphase_late_2" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                                            
+                        <parameter id="gammaShape.s:washington_expphase_late_2" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
+                                            
+                        <parameter id="proportionInvariant.s:washington_expphase_late_2" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                                            
+                        <substModel id="hky.s:washington_expphase_late_2" spec="HKY" kappa="@kappa.s:washington_expphase_late_2">
+                                                    
+                            <frequencies id="estimatedFreqs.s:washington_expphase_late_2" spec="Frequencies" frequencies="@freqParameter.s:washington_expphase_late_2"/>
+                                                
+                        </substModel>
+                                        
+                    </siteModel>
+                                    
+                    <branchRateModel id="StrictClock.c:washington_expphase_late_2" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:washington_expphase_late_2"/>
+                                
+                </distribution>
+                        
+            </distribution>
+                
+        </distribution>
+            
+        <operator id="StrictClockRateScaler.c:washington_expphase_late_2" spec="ScaleOperator" parameter="@clockRate.c:washington_expphase_late_2" scaleFactor="0.75" weight="3.0"/>
+            
+        <operator id="strictClockUpDownOperator.c:washington_expphase_late_2" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+                    
+            <up idref="clockRate.c:washington_expphase_late_2"/>
+                    
+            <down idref="Tree.t:washington_expphase_late_2"/>
+                
+        </operator>
+            
+        <operator id="KappaScaler.s:washington_expphase_late_2" spec="ScaleOperator" parameter="@kappa.s:washington_expphase_late_2" scaleFactor="0.5" weight="0.1"/>
+            
+        <operator id="BDSKY_SerialTreeScaler.t:washington_expphase_late_2" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:washington_expphase_late_2" weight="3.0"/>
+            
+        <operator id="BDSKY_SerialTreeRootScaler.t:washington_expphase_late_2" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:washington_expphase_late_2" weight="3.0"/>
+            
+        <operator id="BDSKY_SerialUniformOperator.t:washington_expphase_late_2" spec="Uniform" tree="@Tree.t:washington_expphase_late_2" weight="30.0"/>
+            
+        <operator id="BDSKY_SerialSubtreeSlide.t:washington_expphase_late_2" spec="SubtreeSlide" tree="@Tree.t:washington_expphase_late_2" weight="15.0"/>
+            
+        <operator id="BDSKY_SerialNarrow.t:washington_expphase_late_2" spec="Exchange" tree="@Tree.t:washington_expphase_late_2" weight="15.0"/>
+            
+        <operator id="BDSKY_SerialWide.t:washington_expphase_late_2" spec="Exchange" isNarrow="false" tree="@Tree.t:washington_expphase_late_2" weight="3.0"/>
+            
+        <operator id="BDSKY_SerialWilsonBalding.t:washington_expphase_late_2" spec="WilsonBalding" tree="@Tree.t:washington_expphase_late_2" weight="3.0"/>
+            
+        <operator id="reproductiveNumberScaler_BDSKY_Serial.t:washington_expphase_late_2" spec="ScaleOperator" parameter="@reproductiveNumber_BDSKY_Serial.t:washington_expphase_late_2" scaleFactor="0.75" weight="10.0"/>
+            
+        <operator id="samplingProportionScaler_BDSKY_Serial.t:washington_expphase_late_2" spec="ScaleOperator" parameter="@samplingProportion_BDSKY_Serial.t:washington_expphase_late_2" scaleFactor="0.75" weight="10.0" scaleAll="false"/>
+            
+        <operator id="origScaler_BDSKY_Serial.t:washington_expphase_late_2" spec="ScaleOperator" parameter="@origin_BDSKY_Serial.t:washington_expphase_late_2" scaleFactor="0.75" weight="1.0"/>
+            
+        <operator id="FrequenciesExchanger.s:washington_expphase_late_2" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+                    
+            <parameter idref="freqParameter.s:washington_expphase_late_2"/>
+                
+        </operator>
+            
+        <logger id="tracelog" spec="Logger" fileName="washington_late_2_2pBDSKY.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+                    
+            <log idref="posterior"/>
+                    
+            <log idref="likelihood"/>
+                    
+            <log idref="prior"/>
+                    
+            <log idref="treeLikelihood.washington_expphase_late_2"/>
+                    
+            <log id="TreeHeight.t:washington_expphase_late_2" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:washington_expphase_late_2"/>
+                    
+            <log idref="clockRate.c:washington_expphase_late_2"/>
+                    
+            <log idref="kappa.s:washington_expphase_late_2"/>
+                    
+            <log idref="BDSKY_Serial.t:washington_expphase_late_2"/>
+                    
+            <log idref="origin_BDSKY_Serial.t:washington_expphase_late_2"/>
+                    
+            <log idref="reproductiveNumber_BDSKY_Serial.t:washington_expphase_late_2"/>
+                    
+            <log idref="samplingProportion_BDSKY_Serial.t:washington_expphase_late_2"/>
+                    
+            <log idref="freqParameter.s:washington_expphase_late_2"/>
+                
+        </logger>
+            
+        <logger id="screenlog" spec="Logger" logEvery="1000">
+                    
+            <log idref="posterior"/>
+                    
+            <log idref="likelihood"/>
+                    
+            <log idref="prior"/>
+
+            <log idref="samplingProportion_BDSKY_Serial.t:washington_expphase_late_2"/>
+                
+        </logger>
+            
+        <logger id="treelog.t:washington_expphase_late_2" spec="Logger" fileName="$(tree).trees" logEvery="1000" mode="tree">
+                    
+            <log id="TreeWithMetaDataLogger.t:washington_expphase_late_2" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:washington_expphase_late_2"/>
+                
+        </logger>
+            
+        <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+        
+    </run>
+    
+</beast>
