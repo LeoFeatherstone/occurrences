@@ -15,7 +15,7 @@ simulated_tree_subs <- simulated_tree
 simulated_tree_subs$edge.length <- simulated_tree_subs$edge.length * 0.01 # multiply branch lengths by a clock rate of 0.01 to obtain tree with subs/site. 
 simulated_sequence <- simSeq(simulated_tree, l = 13000) # To simulate sequences of 13000 nt under the JC substitution model
 ```
-  #### occurrences/simulations/BDSky_template.xml
+  #### occurrences/simulations/BD_template.xml
    * Simulated alignments from the process above can be pasted into this template to conduct analyses using a constant rate birth-death tree prior.
     
   ### occurrences/simulations/convert_bd_bdsky.R
