@@ -149,7 +149,7 @@
 
     <!--logger id="treelog.t:BDskyline" fileName="OUTFILE.trees" logEvery="5000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:BDskyline" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:BDskyline"/>
-    </logger-->
+    </logger--> 
 
 </run>
 
