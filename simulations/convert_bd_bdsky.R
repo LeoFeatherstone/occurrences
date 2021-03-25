@@ -28,3 +28,4 @@ for (i in 1:length(names_xml)){
 
 	writeLines(bdsky_xml[[i]], con=gsub(names_xml[i], pattern='BDConst.+', replacement='BDSky.xml'))
 }
+ 
